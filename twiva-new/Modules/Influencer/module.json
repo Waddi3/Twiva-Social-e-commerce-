@@ -1,0 +1,13 @@
+{
+    "name": "Influencer",
+    "alias": "influencer",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Influencer\\Providers\\InfluencerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

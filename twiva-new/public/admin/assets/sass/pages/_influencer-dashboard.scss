@@ -1,0 +1,247 @@
+@import "../modules/variables";
+
+
+.dashboard_container{
+    width: 100%;
+    
+    .left_col{
+        .scroll-view{
+            #sidebar-menu{
+                .menu-close-button{
+                    display:none;
+                }
+                .user-profile{
+                    display:none;
+                }
+            }
+        }
+    }
+
+    .right_col{
+        width: 100%;
+        padding: 0 !important;
+        .page-title{
+            width: 100% !important;
+            margin: 0 0 24px;   
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);             
+            a{
+                font-family: Noto Serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                color: #111827;
+                
+            }                
+        }
+        .dashboard-inner{
+            .dashboard-card-outr{
+                margin: 0 !important;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                .dashboard-card{
+                    max-width: 100%;
+                    h3{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .common-button{
+                        .white-bttn{
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                #card-social{
+                    background-color: #FFC300;
+                    display: flex;
+                    img{
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 16px;
+                    }
+                    .card-flex{
+                        flex-direction: column !important;
+                        height: 125px;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        h3{
+                            font-family: Source Sans Pro;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 36px;
+                        }
+                    }
+                    .full-button{
+                        padding-left: 64px;
+                        a{
+                            span{
+                                img{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .product-section{
+                max-width: 100%;
+                display: grid !important;
+                .product-box{
+                    max-width: 100%;
+                    background-color: transparent;
+                    box-shadow: none;
+                    .product-box-inner{
+                        .product-box-content{
+                            position: relative;
+                            display: flex;
+                            background-color: #fff;
+                            border-radius: 8px;
+                            box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+                            img{
+                                width: 50%;
+                                height: auto;
+                            }
+                            .box-content{
+                                padding: 16px 8px;
+                            }
+                            .product-rating{
+                                width: 44px;
+                                height: 18px;
+                                background-color: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                position: absolute;
+                                right:50%;
+                                top:70%;
+                                border-radius: 2.14892px 0px 0px 2.14892px;
+                                .rating-title{
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 12.8935px;
+                                    line-height: 140%;
+                                    display: flex;
+                                    align-items: center;
+                                    letter-spacing: -0.053792px;
+                                    color: #111827;
+                                }
+                                .rating-star{
+                                    img{
+                                        width: 10px;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    
+}
+
+
+@media screen and (max-width: $screen_768px){
+    .model-open{
+        -ms-overflow-style: scrollbar;
+            overflow: hidden;
+            height: 100%;
+    }
+ 
+    .dashboard_container{
+        width: 100%;
+        .left_col{
+            display:none;
+            .scroll-view{
+                #sidebar-menu{
+                    transform: translateX(-100%);
+                    transition: ease all 0.3s;
+                    will-change: transform;
+                    width: 80vw;
+                    height: 100vh;
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    background-color: #fff;
+                    z-index: 100;
+                    &.show-sidebar{
+                        transform: translateX(0);
+                        transition: ease all 0.3s;
+                    }
+                    .menu-close-button{
+                        display: inline-block;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background: transparent;
+                        border: none;
+                    }
+                    .user-profile{
+                        display:inline-block;
+                        width: 100%;
+                        height: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding-left: 64px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #27272A;
+                        img{
+                            width: 64px;
+                            height: 64px;
+                            margin-right: 20px;
+                        }
+                    }
+                    .menu_section{
+                        h4{
+                            display: none;
+                        }
+                        .side-menu{
+                            li{
+                                box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+                                width: 100%;
+                                a{  
+                                    padding-top: 16px;
+                                    padding-bottom: 16px;
+                                    margin-bottom:0px;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    color: #27272A;
+                                    img{
+                                        margin-left: 60px !important;
+                                        margin-right: 40px !important;
+                                    }
+                                    span{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

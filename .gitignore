@@ -1,0 +1,27 @@
+# Database dumps
+forge.sql
+*.sql
+
+# IDE files
+.idea/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Laravel
+.env
+.env.*
+/storage/*.key
+/public/storage
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+echo "twiva-new/Modules/User/Http/Controllers/JustTest/TestController.php" >> .gitignore
+echo "Twiva V2.postman_collection.json" >> .gitignore
+echo "twiva-new/documents/Twiva.postman_collection.json" >> .gitignore

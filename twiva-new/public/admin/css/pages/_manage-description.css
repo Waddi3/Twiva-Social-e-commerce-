@@ -1,0 +1,30 @@
+.manage-description-page .profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px; }
+  .manage-description-page .profile-section .profile-edit a {
+    border: 1px solid #1577EB;
+    padding: 6px 10px;
+    /* max-width: 120px; */
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    color: #1577EB;
+    font-size: 15px;
+    border-radius: 4px; }
+  .manage-description-page .profile-section .profile-detail {
+    width: 75%; }
+    .manage-description-page .profile-section .profile-detail p {
+      margin: 0 0 10px 0;
+      font-size: 14px; }
+      .manage-description-page .profile-section .profile-detail p span {
+        max-width: 190px;
+        width: 190px;
+        display: inline-block; }

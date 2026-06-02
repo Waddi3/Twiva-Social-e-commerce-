@@ -1,0 +1,24 @@
+.form-container {
+  @apply items-center bg-[#f2f2f2] rounded-lg lg:p-24 sm:px-6 xs:px-12 sm:py-10 xs:py-16  lg:w-[589px] sm:w-[330px] mx-auto
+}
+
+.user-nav-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  @apply ml-2
+}
+
+.user-nav-item-icon {
+  font-weight: 900;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #101828;
+
+}
+
+.selected-order-index {
+  @apply border border-primary-900 border-2 text-primary-900 border-2	;
+}

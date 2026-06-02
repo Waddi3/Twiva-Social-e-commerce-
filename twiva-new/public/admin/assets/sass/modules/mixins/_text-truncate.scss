@@ -1,0 +1,11 @@
+@mixin text-truncate($line, $height) {
+  display: block!important;
+  display: -webkit-box!important;
+  @include line-climp($line);
+  @include box-orient();
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  height: $height;
+  min-height: $height;
+}

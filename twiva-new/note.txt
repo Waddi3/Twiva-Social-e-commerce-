@@ -1,0 +1,104 @@
+### command have to run when live or push split-price-product on uat or live server:
+
+(done) php artisan migrate --force --path=Modules/Products/Database/Migrations/2023_09_22_194729_add_price_to_products_table.php
+(done) php artisan migrate --force --path=Modules/Order/Database/Migrations/2023_09_24_225614_add_price_details_to_order_details_table.php
+
+
+
+## 586-fix-redeem-in-refer-and-earning
+(done) php artisan migrate --force --path=Modules/User/Database/Migrations/2023_10_21_091758_create_redeem_users_table.php
+
+
+## migration
+(done) php artisan migrate --force --path=Modules/System/Database/Migrations/2023_10_19_093501_create_mobile_versions_table.php
+(done) php artisan module:seed System --force --class=SeedMobileVersionTableTableSeeder
+
+
+
+# Buyer
+(done) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2023_10_21_133828_add_location_to_shipping_address_table.php
+(done) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2023_10_24_141259_add_type_buyer_to_buyers_table.php
+(done) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2023_10_28_150640_update_email_phone_to_buyers_table.php
+(done) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2023_10_28_151640_update_email_phone_to_buyers_table.php
+
+
+(done) php artisan migrate --force --path=Modules/Products/Database/Migrations/2023_11_02_081114_create_shop_influencers_table.php
+(done) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2023_11_13_154053_add_retail_name_store_field_to_buyers_table.php
+
+
+(done) php artisan migrate --force --path=Modules/Order/Database/Migrations/2023_11_17_212301_create_tentative_delivery_periods_table.php
+(done) php artisan module:seed  Order --class=TentativeDeliveryPeriodSeederTableSeeder --force
+(done) php artisan migrate --force --path=Modules/Order/Database/Migrations/2023_11_17_213248_add_field_period_to_orders_table.php
+
+
+# Posts Products Campaign
+(done) php artisan migrate --force --path=Modules/Campaign/Database/Migrations/2023_11_19_070550_create_post_products_table.php
+
+
+(done) php artisan migrate --force --path=Modules/Order/Database/Migrations/2023_11_19_154119_add_delivery_instructions_field_to_orders_table.php
+
+
+
+
+
+
+
+
+
+
+# download package to share
+composer require kudashevs/laravel-share-buttons
+
+
+
+
+# order add delivery code
+(done) php artisan migrate --force --path=Modules/Order/Database/Migrations/2023_11_20_081134_add_delivery_code_field_to_orders_table.php
+
+# for qr code and delivery tracking
+install => sudo apt install php8.2-imagick
+composer require simplesoftwareio/simple-qrcode
+
+
+
+
+
+# notification title update by admin panel
+(done) php artisan migrate --force --path=Modules/Notification/Database/Migrations/2023_11_23_110156_create_notification_titles_table.php
+(done) php artisan module:seed Notification --class=NotificationTitlesTableSeeder --force
+
+
+
+# 629 Business to Customer salary
+# ADD TO ENV
+MPESA_BASE_URL="https://sandbox.safaricom.co.ke"
+MPESA_ENVIRONMENT="sandbox"
+MPESA_INITIATOR_NAME="testapi"
+MPESA_INITIATOR_PASSWORD="Safaricom999!*!"
+DATE_OF_START_NEW_SYSTEM="2023-12-01"
+MPESA_B2C_CONSUMER_KEY=UtOY7n3g5r6bAKZxmPcobb0y1L4aivKX
+MPESA_B2C_CONSUMER_SECRET=G66GQAxSGr8461V5
+# Migrations
+php artisan migrate --force --path=Modules/Payment/Database/Migrations/2023_11_27_080145_create_winning_payouts_table.php
+
+
+#902 Chat Feature
+        ReportReason::firstOrCreate(['reason' => 'Inappropriate post']);
+
+
+php artisan queue:work
+php artisan queue:work --queue=send-otp
+php artisan queue:work --queue=system
+php artisan queue:work --queue=order-actions
+php artisan queue:work --queue=campaign-actions
+php artisan queue:work --queue=winning-payout
+php artisan queue:work --queue=social-media-facebook
+php artisan queue:work --queue=social-media-instagram
+php artisan queue:work --queue=social-media-twitter
+php artisan queue:work --queue=social-media-tiktok
+php artisan queue:work --queue=timeline-actions
+
+_________
+Data: 10-12-2024
+(do it) php artisan ti >
+\Modules\Influencer\Entities\SubCategories::firstOrCreate([ 'name' => \Modules\Influencer\Entities\SubCategories::EventSubCategoryName ],[ 'is_active' => 1, 'is_color' => 0, 'is_size' => 0, 'category_id' => \Modules\Influencer\Entities\Categories::where('name', 'Services')->first()->id, ]);

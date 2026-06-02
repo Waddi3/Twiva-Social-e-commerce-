@@ -1,0 +1,1122 @@
+.signup-banner{
+    display: none;
+}
+
+.right_col{
+    .page-title{
+        font-family: Noto Serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        color: #18181B;
+        box-shadow: 0px -1px 0px 0px #0000001A inset;
+        a{
+            font-family: Noto Serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+            color: #18181B;
+            box-shadow: 0px -1px 0px 0px #0000001A inset;
+        }
+    }
+    .button-sec{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .dashboard_container{
+        margin-top: 0;
+    }
+
+    //reset-password.html
+    header{
+        .logo{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .toggle{
+                #menu_toggle{
+                    padding-top:0;
+                }
+            }
+        }
+    }
+    
+
+    //login.html
+    .login{
+        padding-top:0;
+        .input-field{
+            height: 40px;
+        }
+        input{
+            background-color: #fff !important;
+        }
+        .back-link{
+            background: #FFFFFF;
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+            a{
+                font-family: Noto Serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                color: #3F3F46;
+                padding: 20px 30px 10px 30px;
+            }
+        }
+        .container{
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            overflow-y:hidden;
+            .login-inner{
+                height:100%;
+                .login-right{
+                    margin:0;
+                    height: 100%;
+                    .login-section{
+                        max-width: 100%;
+                        height:100%;
+                        margin:0;
+                        border-radius: 0;
+                        background: #F8F8F8;
+                        .logo{
+                            img{
+                                width: 120px;
+                                height: 123.24px;
+                            }
+                        }
+                        .forgot-pass{
+                            margin-top: 50px;
+                        }
+                        .input-field{
+                            margin-bottom: 48px;
+                            input{ 
+                                height: 40px !important;
+                                padding: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-login{
+            display: none;
+        }
+    }
+
+
+    //signup.html
+    .signup-banner{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #8A0E49;
+        padding: 16px 0;
+    }
+    .signup-section{
+        .login{
+            background: #8A0E49;
+        }
+        .login-section{
+            background: #FFFFFF !important;
+            border-radius: 20px 20px 0px 0px !important;
+            h3{
+                font-family: Noto Serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 100.5%;
+                color: #1F2937;
+            }
+            p{
+                font-size: 16px !important;
+                line-height: 150%;
+                color: #6B7280;
+            }
+        }
+        .logo{
+            display: none;
+        }
+    }
+
+
+    //influencer-dashboard.html
+    .top_nav{
+        .nav_menu{
+            .navbar-right{
+                .user-profile{
+                    display: none;
+                }
+                .dropdown{
+                    display: none;
+                }
+            }
+        }
+    }
+    .influencer-dashboard-page{
+        padding-top: 0px;
+    }
+    .right_col{
+        .dashboard-card-outr{
+            display: flex !important;
+            flex-direction: column;
+            .dashboard-card{
+                margin-bottom: 16px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .product-section{
+        box-shadow: 0px 1px 0px 0px #0000000D inset;
+        .product-box{
+            padding: 20px 0px 20px 20px !important;
+            box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.06) !important;
+            border-radius: 4px !important;
+        }
+    }
+
+
+    //influencer-eshop.html
+    .influencer-eshop-page{
+        .right_col{
+            .page-title{
+                display: none;
+            }
+            .product-banner{
+                padding: 0;
+                .banner-image{
+                    height:187px;
+                    border-radius: 0;
+                }
+                .banner-section{
+                    margin-top: -100px;
+                    flex-direction: column;
+                    align-items: center;
+                    .banner-content{
+                        justify-content: center;
+                        align-items: center !important;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+                .alert{
+                    margin:16px !important;
+                    align-items: center;
+                    background: rgba(20, 184, 166, 0.2);
+                    border: 1px solid #14B8A6;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    .influencer-eshop-page {
+        .dashboard_container{ 
+            .add-product-page{
+                .dashboard-inner {
+                    .product-banner{
+                        .banner-section {
+                            .banner-content {
+                                .common-button{
+                                    justify-content: space-between !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    //influencer-select-product.html
+    .influencer-select-product {
+        .right_col{
+            .product-banner{
+                width: 100%;
+                height:136px;
+            }
+            #banner-carousel{
+                width: 100%;
+                height:136px;
+                .banner-details{
+                    padding-left: 8px;
+                    p{
+                        display: none;
+                    }
+                }
+                .carousel-indicators{
+                    bottom: -48px;
+                    right:0;
+                    left:auto;
+                    margin-right: 0;
+                }
+            }
+        }
+    }   
+
+
+
+    //influencer-product-detail
+    .product-detail-wrapper{
+        .right_col{
+            .page-title{
+                display: block;
+            }
+            .product-main{
+                flex-direction: column;
+               
+                .product-detail-cont{
+                    max-width: 100%;
+                    padding:16px;
+                }
+                .product-specification{
+                    max-width: 100%;
+                    
+                    h2{
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 150%;
+                        display: flex;
+                        align-items: center;
+                        color: #000000;
+                        padding: 0px 32px;
+                    }
+                    h3{
+                        font-family: Inter;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 159.96%;
+                        display: flex;
+                        align-items: center;
+                        color: #000000;
+                        padding: 0px 32px;
+                    }
+                    .spec-row{
+                        padding: 0px 32px;
+                    }
+                    .prod-desc{
+                        background-color: #fff;
+                        padding: 16px 32px;
+                        label{
+                            font-family: Source Sans Pro;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            display: flex;
+                            align-items: center;
+                            color: #000000;
+                        }
+                        p{
+                            font-family: Source Sans Pro;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: #1D1F22;
+                        }
+                    }
+                    .prod-spec{
+                        background-color: #fff;
+                        padding: 16px 32px;
+                        margin-top:0;
+                        border-top: 1px solid #E5E5E5;
+                    }
+                }
+            }
+        }
+    }
+        
+    
+    //account-settings.html
+    #account-settings{
+        .back-link{
+            a{
+                font-family: Noto Serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 150%;
+                color: #18181B;
+            }
+        }
+        .account-connections{
+            padding:16px;
+            .account-list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .account-list-item{
+                    width:100%;
+                    height: 48px;
+                    background-color: #fff;
+                    padding:12px 16px;
+                    border-radius:2px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    a{
+                        font-family: Source Sans Pro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: #3F3F46;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+    //social-media-connections.html
+    #account-icons{
+        .account-list-item{
+            height: 59px;
+            border-radius: 4px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 15px 0px #0000001A;
+            >p{
+                font-family: Source Sans Pro;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                color: #7A0D41;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 16px;
+                }
+            }
+        }
+        .active{
+            color: #16A34A !important;
+        }
+    }
+    
+
+    //influencer-refer-earn.html
+    .social-share-item-wrapper{
+        display:none;
+    }
+    
+    .refer-content-box-wrapper{
+        padding: 16px 32px;
+        .refer-code-wrapper{
+            .content{
+                p{
+                    font-family: Airbnb Cereal App;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    letter-spacing: -0.09px;
+                    color: #6B7280;
+                }
+            }
+            .refer-code{
+                width:205px;
+                height: 72px;
+                background: #7A0D41;
+                position: relative;
+                h5{
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 150%;
+                    text-align: center;
+                    letter-spacing: 0.14em;
+                    color: #FFFFFF;
+                }
+                .ecllipse{
+                    background: #E5E5E5;
+                    width:12px;
+                    height:18px;
+                    border-radius:50%;
+                }
+                #ecllipse-1{
+                    position: absolute;
+                    top:-5px;
+                    left:-5px;
+                }
+                #ecllipse-2{
+                    position: absolute;
+                    top:-5px;
+                    right:-5px;
+                }
+                #ecllipse-3{
+                    position: absolute;
+                    bottom:-5px;
+                    left:-5px;
+                }
+                #ecllipse-4{
+                    position: absolute;
+                    bottom:-5px;
+                    right:-5px;
+                }
+                img{
+                    width: 177px;
+                }
+                #line-1{
+                    position: absolute;
+                    top:4px;
+                    left:14px;
+                }
+                #line-2{
+                    position: absolute;
+                    bottom:4px;
+                    left:14px;
+                }
+                
+            }
+            .refer-code-copy-btn{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: #A1A1AA;
+            }
+        }
+    }
+    .right_col{
+        .button-sec{
+            display: block;
+            margin-bottom: 16px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            padding: 16px;
+           button{
+               height: 48px;
+               a{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: center;
+                color: #FFFFFF;
+                
+               }
+           }
+        }
+    }
+
+
+    //influence-bank-setup.html
+    #bank-setup{
+        .breadcrumb-wrapper{
+            .breadcrumb{
+                display: none;
+            }
+        }
+        .dashboard-inner{
+            .bank-setup-form{
+                max-width: 100%;
+                background: transparent;
+                box-shadow: none;
+                margin:0;
+                .subscription-title{
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #27272A;
+                }
+                .account-setup{
+                    .account-form{
+                        .form-field{
+                            background: transparent;
+                            border:0px;
+                            label{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: #27272A;
+                            }
+                            input{
+                                background-color: #fff !important;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+       
+    }
+
+
+    //influencer-change-password.html
+    #change-password{
+        .login-section{
+            background: #E5E5E5;
+            .logo{
+                display: none;
+            }
+            p{
+                display: none;
+            }
+            .input-field{
+                margin-bottom: 64px;
+                input{
+                    background-color: #fff !important;
+                }
+            }
+        }
+    }
+
+
+    //influencer-mobile-verification.html
+    #mobile-verification{
+        .login-section{
+            padding:0;
+            .logo{
+                display: none;
+            }
+            p{
+                display: none;
+            }
+            .input-field{
+                padding:32px;
+                label{
+                    margin-bottom:32px;
+                }
+                input{
+                    width: 100%;
+                    height: 46px !important;
+                    padding: 16px;
+                    background-color: #fff;
+                    border: 1px solid #A1A1AA;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+            }
+            .bottom-button{
+                position: fixed;
+                width:100%;
+                bottom:0;
+                button{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    //influencer-otp-sent.html
+    #mobile-verification{
+        .login-section{
+            .input-field{
+                height: auto;
+                label{
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #27272A;
+                }
+                .otp-input{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    input{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .no-account{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+
+
+    //influencer-payment-history.html
+    #payment-history{
+        .page-title{
+            .breadcrumb{
+                display:none;
+            }
+        }
+        .earning-paymen-wrapper{
+            background: #E5E5E5;
+            .earning-edit-btn-wrapper{
+                display: none;
+            }
+            h4{
+                font-family: Source Sans Pro;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 21px;
+            }
+            .earning-item-wrapper{
+                height: 76px;
+            }
+        }
+    }
+
+
+    //influencer-post.html
+    #post{
+        .product-section{
+            margin-top: 0;
+            box-shadow: none;
+            margin-bottom: 100px;
+            .toggle-link{
+                .nav{
+                    .nav-item{
+                        a{  
+                            margin: 16px 16px 16px 8px;
+                            padding:0px;
+                            font-family: Source Sans Pro;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #27272A;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .toggle-link-active{
+                    border-bottom: 4px solid #FFC300;
+                    border-radius: 1px;
+                    opacity: 1 !important;
+                }
+            }
+            .product-box{
+                display: none;
+            }
+
+            
+        }
+        .post-active{
+            display: block !important;
+        }
+
+        .common-button{
+            padding:16px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+            .purple-btn{
+                max-width: 45%;
+                height: 48px;
+                margin-left: 0;
+            }
+            .white-bttn{
+                max-width: 45%;
+                height: 48px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+
+    //influencer-post-stories.html
+    #post-story{
+        .right_col{
+            margin-top:64px;
+            .page-title{
+                box-shadow: none;
+                a{
+                    box-shadow: none;
+                }
+            }
+            .personalise-product{
+                .create-eshop-wrapper{
+                    width: 100%;
+                    padding:16px;
+                    margin-top:0px;
+                    .eshop-details-wrapper{
+                        width: 100%;
+                        margin-bottom: 100px;
+                        .product-section{
+                            max-width: 100%;
+                            display: grid !important;
+                            .product-box{
+                                max-width: 100%;
+                                background-color: transparent;
+                                box-shadow: none;
+                                padding: 0 !important;
+                                .product-box-inner{
+                                    padding-right:0;
+                                    .product-box-content{
+                                        position: relative;
+                                        display: flex;
+                                        background-color: #fff;
+                                        border-radius: 8px;
+                                        box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+                                        img{
+                                            width: 50%;
+                                            height: auto;
+                                        }
+                                        .box-content{
+                                            padding: 16px 8px;
+                                        }
+                                        .product-rating{
+                                            width: 44px;
+                                            height: 18px;
+                                            background-color: #fff;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-evenly;
+                                            position: absolute;
+                                            right:50%;
+                                            top:70%;
+                                            border-radius: 2.14892px 0px 0px 2.14892px;
+                                            .rating-title{
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                font-size: 12.8935px;
+                                                line-height: 140%;
+                                                display: flex;
+                                                align-items: center;
+                                                letter-spacing: -0.053792px;
+                                                color: #111827;
+                                            }
+                                            .rating-star{
+                                                img{
+                                                    width: 10px;
+                                                    height: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .product-images{
+                            margin-top: 32px;
+                            margin-bottom: 32px;
+                        }
+
+                        .form-field-full{
+                            height: auto;
+                        }
+
+                        .select-color{
+                            width: 100%;
+                            display: grid !important;
+                            .color-list{
+                                width: auto;
+                            }
+                        }
+
+                        .common-button{
+                            justify-content: flex-start;
+                            .white-bttn{
+                                width: 105px;
+                                height: 40px;
+                                border-radius: 4px;
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 150%;
+                                color: #7A0D41;
+                            }
+                        }
+
+                        .form-field{
+                            .multi-select-options{
+                                button{
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #post-button{
+                    padding:16px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: fixed;
+                    bottom: 0;
+                    background: #fff;
+                    .purple-btn{
+                        max-width: 45%;
+                        height: 48px;
+                        margin-left: 0;
+                        margin-top: 0;
+                    }
+                    .white-bttn{
+                        max-width: 45%;
+                        height: 48px;
+                        border-radius: 4px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #7A0D41;
+                        padding: 9px 48px;
+                    }
+                }
+            }
+        } 
+    }
+
+    
+
+    //influencer-preview-story
+    #preview-story{
+        .dashboard_container{
+            padding-top: 64px;
+            .page-title{
+                box-shadow: none;
+                a{
+                    box-shadow: none;
+                }
+            }
+            .personalise-product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 100px;
+                .preview-content{
+                    width: 351px;
+                    height: 666px;
+                    position: relative;
+                    .preview-text{
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 130%;
+                        display: flex;
+                        align-items: center;
+                        color: #FB923C;
+                        position: absolute;
+                        left:0;
+                        bottom:48px;
+                        z-index:10;
+                        padding:16px;
+                    }
+                }
+                #preview-button{
+                    padding:16px;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0;
+                    z-index: 50;
+                    background: #fff;
+                    text-align: center;
+                    .white-bttn{
+                        width: 90%;
+                        padding: 9px 0px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #7A0D41;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    //influencer-schedule-stories.html
+    #schedule-story{
+        .form-input-field{
+            padding-left:0;
+            .radio-input{
+                flex-direction: column;
+                align-items: flex-start;
+                div{
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+        .form-field{
+            .multi-select-options{
+                button{
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 150%;
+                    display: flex;
+                    align-items: center;
+                    color: #27272A;
+                }
+            }
+        }
+    }
+
+
+    //influencer-edit-profile.html
+    #account-settings{
+        .profile-wrapper{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            #logo-feature-img{
+                display: none;
+            }
+        }
+    }
+
+
+    //influencer-interest.html
+    #profile-interest{
+        .account-cont{
+            padding:0;
+            .form-check{
+                padding: 12px 24px 12px 16px;
+                height: 46px;
+                background-color: #fff;
+                margin-top:8px;
+                margin-bottom:8px;
+                display: flex;
+                align-items: center;
+                label{
+                    font-family: inherit;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 140%;
+                    display: flex;
+                    align-items: center;
+                    color: #3F3F46;
+
+                }
+                input{
+                    position: absolute;
+                    right:16px;
+                    width:20px;
+                    height:20px;
+                    border-radius: 4px;
+                    border: 1px solid #999999;
+                }
+                
+            }
+            .common-button{
+                width: 100%;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                padding: 0px 16px;
+                justify-content: center;
+                position: fixed;
+                bottom: 0;
+                .white-bttn{
+                    max-width: 30%;
+                    height: 48px;
+                    border-radius: 4px;
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: rgba(0, 0, 0, 0.87);
+                }
+                .purple-btn{
+                    max-width: 70%;
+                    height: 48px;
+                    border-radius: 4px;
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+
+    //influencer-profile-notification.html
+    #notification{
+        .back-link{
+            margin-bottom: 16px;
+            box-shadow: 0px -1px 0px 0px #0000001A inset;
+        }
+        .noti-section{
+            width: 100%;
+            height: 75px;
+            padding: 10px 16px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px -1px 0px 0px #00000026 inset;
+            h1{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                color: #27272A;
+            }
+            p{
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                color: #27272A;
+                opacity: 0.5;
+                padding-top: 8px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+/* --- FONTS --- */
+
+// Example of Google Font include
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+// generated fonts
+
+// BrandonGrotesque-Bold
+@font-face {
+  font-family: 'BrandonGrotesque-Bold';
+  src: url('#{$font-url}/BrandonGrotesque-Bold.eot');
+  src: url('#{$font-url}/BrandonGrotesque-Bold.eot') format('embedded-opentype'),
+  url('#{$font-url}/BrandonGrotesque-Bold.woff2') format('woff2'),
+  url('#{$font-url}/BrandonGrotesque-Bold.woff') format('woff'),
+  url('#{$font-url}/BrandonGrotesque-Bold.ttf') format('truetype'),
+  url('#{$font-url}/BrandonGrotesque-Bold.svg') format('svg');
+}

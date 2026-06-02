@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "NODE_OPTIONS=\"--max-old-space-size=4096\" && npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.6",
+    "postcss": "^8.4.13",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "tailwindcss": "^3.0.24",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.2",
+    "feather-icons": "^4.29.0",
+    "flickity": "^3.0.0",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.3",
+    "laravel-mix-merge-manifest": "^2.0.0",
+    "toastr": "^2.1.4"
+  }
+}

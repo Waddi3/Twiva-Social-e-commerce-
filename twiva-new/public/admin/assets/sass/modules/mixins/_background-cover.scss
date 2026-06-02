@@ -1,0 +1,9 @@
+// Background images
+@mixin background-cover($filename, $position:center top, $size:cover, $repeat: no-repeat) {
+  background: {
+    image: url(#{$imagedir}#{$filename});
+    position: $position;
+    repeat: $repeat;
+  	size:$size;
+  }
+}

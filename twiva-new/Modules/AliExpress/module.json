@@ -1,0 +1,11 @@
+{
+    "name": "AliExpress",
+    "alias": "aliexpress",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AliExpress\\Providers\\AliExpressServiceProvider"
+    ],
+    "files": []
+}

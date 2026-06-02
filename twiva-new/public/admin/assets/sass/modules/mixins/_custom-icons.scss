@@ -1,0 +1,17 @@
+@mixin custom-icons($icon-content, $icon-font-size, $icon-color) {
+	&:before {
+		content: $icon-content;
+		color: $icon-color;
+	  display: inline-block;
+		font-size: $icon-font-size;
+	  font-family: $icons-font-family;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  text-rendering: auto;
+	  line-height: 1;
+	  -webkit-font-smoothing: antialiased;
+	}
+}

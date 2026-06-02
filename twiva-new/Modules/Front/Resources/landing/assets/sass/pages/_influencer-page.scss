@@ -1,0 +1,417 @@
+.influencer-page{
+    .main-content-wrapper{
+        .main-heading{
+            padding: 100px 190px 100px 190px;
+            margin-bottom: 0;
+            h1{
+                font-family: $playfair-display;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 100px;
+                color: #272727;
+                text-align: center;
+            }
+        }
+
+
+        .main-tab-content{
+            .navbar{
+                padding: 0 215px;
+
+                .navbar-nav{
+                    .nav-item{
+                        height: auto;
+                        .nav-link{
+                            height: 100%;
+                            padding: 16px 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .featured-influencers{
+            margin-bottom: 126px;
+
+            .influencer-heading{
+                padding: 0 230px;
+                margin: 50px 0 67px 0;
+                h1{
+                    font-family: $playfair-display;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 100px;
+                    text-align: center;
+                    color: #272727;
+                }
+            }
+
+            #multi-item-slider{
+
+                .controls-top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: absolute;
+                    z-index: 100;
+                    width: 100%;
+                    top: 50%;
+                    a{
+                        img{
+                            width: 43px;
+                            height: 43px;
+                        }
+                    }
+                }
+
+                .carousel-indicators{
+                    width: 100%;
+                    margin: 0;
+                    bottom: -15px;
+                    li{
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: 1px solid #27272A;
+                        box-sizing: border-box;
+                        &.active{
+                            background-color: $primary-color;
+                            border: 0;
+                        }
+                    }
+                }
+                .carousel-inner{
+                    margin-left: 0;
+                    margin-right: 0;
+                    .carousel-item{
+                        margin-right: 0;
+                        padding: 0;
+                        
+                        .card{
+                            align-items: center;
+                            border: 0;
+                            padding: 0 20px;
+                            .card-image{
+                                width: 350px;
+                                height: 350px;
+                                margin-bottom: 43px;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                a{
+                                    display: block;
+                                    width: 350px;
+                                    height: 350px;
+                                    img{
+                                        width: 350px;
+                                        height: 350px;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .card-img-top{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .card-body{
+                                width: 100%;
+                                .icons{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom: 23px;
+                                    a{
+                                        img{
+                                            width: 30px;
+                                            height: 30px;
+                                            margin: 0 16px;
+                                        }
+                                    }
+                                }
+
+                                .card-title{
+                                    text-align: center;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    color: #272727;
+                                    margin-bottom: 8px;
+                                }
+
+                                .card-text{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    div{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        h2{
+                                            font-weight: 600;
+                                            font-size: 28px;
+                                            color: #272727;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.start-earning-section{
+    width: 100%;
+    height: 372px;
+    background-color: $primary-color;
+    margin-top: 50px;
+    position: relative;
+
+    .left-image{
+        width: 335px;
+        height: 377px;
+        position: absolute;
+        top: -55px;
+        left: -30px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .right-image{
+        width: 418px;
+        height: 470px;
+        position: absolute;
+        right: -77px;
+        bottom: -180px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .earning-section-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        h1{
+            font-family: Neucha;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 150%;
+            color: #FFC300;
+            margin: 68px 0px 32px 0;
+        }
+
+        .earning-tips{
+            display: flex;
+            margin-bottom: 32px;
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 152%;
+                color: #FFFFFF;
+                margin-right: 32px;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+#influencer-carousel{
+    .btn-floating{
+        width: 43px;
+        height: 43px;
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+/* show 3 items */
+.carousel-inner .active,
+.carousel-inner .active + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+    display: block !important;
+}
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+/* farthest right hidden item must be abso position for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* right or prev direction */
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+
+
+
+@media screen and (max-width: $screen_768px){
+    .primary-banner{
+        height: 440px;
+        .banner-content{
+            .banner-text{
+                h1{
+                    font-size: 42px;
+                    line-height: 60px;
+                }
+            }
+            .banner-img{
+                display: none;
+            }
+        }
+    }
+
+    .influencer-page{
+        .main-content-wrapper{
+            .main-heading{
+                padding: 16px;
+                h1{
+                    font-size: 32px;
+                    line-height: 50px;
+                }
+            }
+
+            .main-tab-content{
+                .navbar{
+                    display: none;
+                }
+                .tab-section-container{
+                    .tab-items{
+                        flex-direction: column;
+                        height: auto;
+
+                        .img-wrapper{
+                            margin-right: 0;
+                        }
+                        .text-wrapper{
+                            padding: 16px;
+                            h2{
+                                font-size: 24px;
+                            }
+                            p{
+                                font-size: 16px;
+                                text-align: justify;
+                            }
+                        }
+
+                        &.right-align{
+                            padding-left: 0;
+                            .img-wrapper{
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .start-earning-section{
+                h1{
+                    font-size: 55px;
+                }
+                .left-image{
+                    top: -135px;
+                    left: -135px;
+                }
+                .right-image{
+                    right: -100px;
+                    bottom: -250px;
+                }
+                .earning-section-content{
+                    h1{
+                        text-align: center;
+                        font-size: 40px;
+                    }
+                    .earning-tips{
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        p{
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+
+            .featured-influencers{
+                .influencer-heading{
+                    padding: 16px;
+                    h1{
+                        font-size: 42px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@mixin background-repeat($filename, $position:0 0, $repeat:repeat){
+  background: {
+    image: url(#{$imagedir}#{$filename});
+    position: $position;
+    repeat: $repeat;
+  }
+}

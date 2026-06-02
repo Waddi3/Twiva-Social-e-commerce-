@@ -1,0 +1,61 @@
+.btn {
+  // btn-outline
+  &.btn-outline {
+    white-space: normal;
+    &:not(:hover){
+      background-color: transparent;
+    }
+    border-width: 1px;
+    &.btn-default:not(:hover){
+      color: $btn-default-color;
+    }
+    &.btn-primary:not(:hover){
+      color: $brand-primary;
+    }
+    &.btn-secondary:not(:hover){
+      color: $brand-secondary;
+    }
+    &.btn-danger:not(:hover){
+      color: $brand-danger;
+    }
+    &.btn-success:not(:hover){
+      color: $brand-success;
+    }
+    &.btn-info:not(:hover){
+      color: $brand-info;
+    }
+    &.btn-warning:not(:hover){
+      color: $brand-warning;
+    }
+  }
+  &.btn-clear {
+    background: none;
+    border-color: transparent;
+    &.btn-default {
+      color: $btn-default-color;
+    }
+    &.btn-primary {
+      color: $brand-primary;
+    }
+    &.btn-secondary {
+      color: $brand-secondary;
+    }
+    &.btn-danger {
+      color: $brand-danger;
+    }
+    &.btn-success {
+      color: $brand-success;
+    }
+    &.btn-info {
+      color: $brand-info;
+    }
+    &.btn-warning {
+      color: $brand-warning;
+    }
+  }
+  
+}
+
+
+/*toggle button start*/
+

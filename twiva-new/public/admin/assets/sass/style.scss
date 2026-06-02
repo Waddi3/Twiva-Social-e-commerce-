@@ -1,0 +1,37 @@
+// Merge all stylesheets into one
+// Global
+// Bourbon
+@import "bourbon/bourbon";
+
+// Core bootstrap variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Core App variables and mixins
+@import "modules/variables";
+@import "modules/mixins/mixins";
+
+// Base Style
+@import "base/fonts";
+@import "base/global";
+@import "base/typography";
+@import "base/helpers";
+
+// Sprite Style
+@import "sprites/sprites";
+
+// fonts
+@import "fonts/icomoon";
+
+// vendors
+
+
+// vendors
+
+// Layout Style
+@import "layouts/layouts";
+// Components
+@import "components/components";
+
+// Pages
+@import "pages/pages";

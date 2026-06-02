@@ -1,0 +1,7 @@
+## Requirement Commands To Live
+# Product
+(done) php artisan migrate --force --path=Modules/Products/Database/Migrations/2023_11_16_170847_add_brand_field_to_products_table.php
+
+
+(do it) php artisan migrate --force --path=Modules/Buyer/Database/Migrations/2024_02_14_133422_add_created_by_to_buyers_table.php
+(do it) php artisan migrate --force --path=Modules/Order/Database/Migrations/2024_02_14_150352_add_created_by_to_shipping_address_table.php

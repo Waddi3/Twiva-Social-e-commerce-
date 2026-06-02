@@ -1,0 +1,276 @@
+#admin-dashboard{
+    .right_col{
+        .dashboard-section{
+            .card-section{
+                
+                .card-section-1, .card-section-2{
+                    margin-bottom: 16px;
+                    .cards{
+                        .card-content{
+                            padding: 16px;
+                            height: auto;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+
+                            .card-heading{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 10px;
+    
+                                h2{
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    letter-spacing: 0.01em;
+                                    color: #FFFFFF;
+                                }
+                                img{
+                                    height: 24px;
+                                    width: 24px;                                    
+                                }
+                            }
+                            .card-numbers{
+                                h1{
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 26px;
+                                    line-height: 33px;
+                                    letter-spacing: 0.01em;
+                                    color: #FFFFFF;
+                                    margin-bottom: 16px;
+                                }
+                            }
+                            .card-desc{
+                                display: flex;
+                                img{
+                                    margin-right: 7.2px;
+                                }
+                                p{    
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    letter-spacing: 0.01em;
+                                    color: #FFFFFF;
+                                    margin-right: 14px;
+                                }
+                            }
+                        }
+                    }
+                    #card-1{
+                        background: #41007E;
+                        box-shadow: 0px 0px 16px 0px #5B50FF33;
+                    }
+                    #card-2{
+                        background: #00AEFF;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                        
+                    }
+                    #card-3{
+                        background: #FFB800;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                    #card-4{
+                        background: #F83687;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                    #card-5{
+                        background: #29BC8A;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                    #card-6{
+                        background: #6F52ED;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                    #card-7{
+                        background: #FF9B00;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                    #card-8{
+                        background: #06C245;
+                        box-shadow: 0px 0px 16px rgba(91, 80, 255, 0.2);
+                    }
+                }
+            }
+
+            .revenue-section{
+                margin-bottom: 16px;
+                .revenue{
+                    .graph{
+                        background: #fff;
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+                        border-radius: 4px;
+                        padding:16px;
+                        height: 100%;
+                        .graph-text{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 24px;
+                            h1{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-transform: uppercase;                                
+                                color: #333333;
+                                margin: 24px 0 28px 4px;
+                            }
+                            .duration{
+                                display: flex;
+                                margin-right: 16px;
+                                border:0;
+                                a{
+                                    padding:0;
+                                    border: 0;
+                                    &.active{
+                                        color: #7A0D41;
+                                        border-bottom: 2px solid #7A0D41;
+                                    }
+                                }
+                                .yearly{
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    text-transform: uppercase;
+                                    color: rgba(0,0,0,0.3);
+                                    margin-right: 16px;
+                                }
+                                .monthly{
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    text-transform: uppercase;
+                                    color: rgba(0,0,0,0.3);
+                                }
+                            }
+                        }
+                    }
+                }
+                .sales{
+                    .pie-chart{
+                        background: #fff;
+                        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+                        border-radius: 4px;
+                        padding:16px;
+                        h1{
+                            font-family: Source Sans Pro;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            color: #333333;
+                            margin: 24px 0 0 4px;
+                        }
+                        .bar{
+                            p{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 15px;
+                                letter-spacing: 0.01em;
+                                color: #000000;
+                            }
+                            .progress{
+                                height: 4px;
+                                background: #F3F3F9;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .company-section{
+                margin-bottom: 32px;
+                .section-1, .section-2{
+                    background: #FFFFFF;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                    padding-bottom: 13px;
+                    h1{
+                        background: #FFFFFF;
+                        padding: 16px 16px 7px 16px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #333333;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                    }
+                    .content-box-wrapper{
+                        padding: 16px 12px 0 12px;
+                        background: #FFFFFF;
+                    }
+                    .content{
+                        display: flex;
+                        background: #FFFFFF;
+                        // box-shadow: 0px 4px 6px 0px #0000001A;
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                        .image{
+                            padding:0px;
+                            width: 130px;
+                            height: 113px;
+                            margin-right: 17px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                         }
+                        .desc{
+                            display: flex;
+                            flex-direction: column;
+                            h1{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 150%;
+                                color: #4B5563;
+                                padding:4px;
+                            }
+                            h2{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: #111827;
+                                padding:4px;
+                            }
+                            p{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: #16A34A;
+                                background: #F0FDF4;
+                                border-radius: 2.14892px;
+                                padding: 4px 8px;
+                                width: fit-content;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

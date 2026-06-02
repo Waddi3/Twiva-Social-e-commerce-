@@ -1,0 +1,109 @@
+.left-main-sec {
+  background-color: #f4f5f9; }
+
+:focus {
+  -webkit-box-shadow: 0 0 0 !important;
+  box-shadow: 0 0 0 !important; }
+
+.left-page-title {
+  padding: 20px;
+  border-bottom: 1px solid #d2d2d2;
+  font-weight: bold;
+  font-size: 14px; }
+
+.left-page-title i {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-right: 5px; }
+
+.left-content-sec {
+  padding: 20px 30px; }
+
+.productadd-descsec {
+  background-color: #fff;
+  border: 1px solid #d2d2d2; }
+
+.productadd-descsec h2 {
+  padding: 20px;
+  border-bottom: 1px solid #d2d2d2;
+  font-size: 18px; }
+
+.formadddesc {
+  padding: 20px;
+  max-width: 600px; }
+
+.drop-zone {
+  max-width: 130px;
+  height: 120px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  color: #cccccc;
+  border: 2px solid #dadada;
+  margin-bottom: 10px; }
+
+.rounder-border {
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  margin: 10px; }
+
+.rounder-colored {
+  border: 0;
+  background-color: #00c0a9;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 55px;
+  margin: 10px; }
+
+.formadddesc p {
+  font-size: 14px;
+  color: #4e4e4e; }
+
+.rounder-colored:hover {
+  background-color: #047366; }
+
+.rounder-border:hover {
+  color: #00c0a9; }
+
+.drop-zone--over {
+  border-style: solid; }
+
+.drop-zone__input {
+  display: none; }
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative; }
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .left-content-sec {
+    padding: 10px; } }

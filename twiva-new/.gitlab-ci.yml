@@ -1,0 +1,41 @@
+
+stages:
+  - test
+  - deploy
+
+variables:
+  MYSQL_DATABASE: twiva
+  MYSQL_ROOT_PASSWORD: password
+  DB_HOST: mysql
+  DB_USERNAME: root
+
+test:
+  stage: test
+  services:
+    - mysql
+  image: registry.gitlab.com/zamanltd/server/twiva-new:latest
+  script:
+    - cp .env.example .env
+    - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+    - php artisan key:generate
+#    - php artisan migrate:ordered
+
+deploy_development:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - wget $FORGE_DEV_DEPLOYMENT_TRIGGER
+    - echo "Forge deployment triggered :)"
+  only:
+    - develop
+
+
+deploy_production:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - wget $FORGE_PROD_DEPLOYMENT_TRIGGER
+    - echo "Forge deployment triggered :)"
+  when: manual
+  only:
+    - main

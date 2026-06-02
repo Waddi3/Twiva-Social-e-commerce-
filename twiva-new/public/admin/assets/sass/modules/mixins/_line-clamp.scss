@@ -1,0 +1,7 @@
+@mixin line-clamp($line) {
+  -webkit-line-clamp: $line;
+  -moz-line-clamp: $line;
+  -ms-line-clamp: $line;
+  -o-line-clamp: $line;
+  line-clamp: $line;
+}

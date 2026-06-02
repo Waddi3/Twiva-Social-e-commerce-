@@ -1,0 +1,171 @@
+/**
+ * Grid Flex Box
+ * --------------------------------------------------
+ * Using flexbox for the grid, inspired by Philip Walton:
+ * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+ * By default each .flex-col within a .flex-row will evenly take up
+ * available width, and the height of each .flex-col with take
+ * up the height of the tallest .flex-col in the same .flex-row.
+ */
+
+.flex-row {
+  @include display-flex();
+  padding: ($grid-padding-width / 2);
+  width: 100%;
+}
+
+.flex-row-wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-row-no-padding {
+  padding: 0;
+
+  > .flex-col {
+    padding: 0;
+  }
+}
+
+.flex-row + .flex-row {
+  margin-top: ($grid-padding-width / 2) * -1;
+  padding-top: 0;
+}
+
+.flex-col {
+  @include flex(1);
+  display: block;
+  padding: ($grid-padding-width / 2);
+  width: 100%;
+}
+
+
+/* Vertically Align Columns */
+/* .flex-row-* vertically aligns every .flex-col in the .flex-row */
+.flex-row-top {
+  @include align-items(flex-start);
+}
+.flex-row-bottom {
+  @include align-items(flex-end);
+}
+.flex-row-center {
+  @include align-items(center);
+}
+.flex-row-stretch {
+  @include align-items(stretch);
+}
+.flex-row-baseline {
+  @include align-items(baseline);
+}
+
+/* .flex-col-* vertically aligns an individual .flex-col */
+.flex-col-top{
+  @include align-self(flex-start);
+}
+.flex-col-bottom {
+  @include align-self(flex-end);
+}
+.flex-col-center {
+  @include align-self(center);
+}
+
+/* Column Offsets */
+.flex-col-offset-10 {
+  margin-left: 10%;
+}
+.flex-col-offset-20 {
+  margin-left: 20%;
+}
+.flex-col-offset-25 {
+  margin-left: 25%;
+}
+.flex-col-offset-33, .flex-col-offset-34 {
+  margin-left: 33.3333%;
+}
+.flex-col-offset-50 {
+  margin-left: 50%;
+}
+.flex-col-offset-66, .flex-col-offset-67 {
+  margin-left: 66.6666%;
+}
+.flex-col-offset-75 {
+  margin-left: 75%;
+}
+.flex-col-offset-80 {
+  margin-left: 80%;
+}
+.flex-col-offset-90 {
+  margin-left: 90%;
+}
+
+
+/* Explicit Column Percent Sizes */
+/* By default each grid column will evenly distribute */
+/* across the grid. However, you can specify individual */
+/* columns to take up a certain size of the available area */
+.flex-col-10 {
+  @include flex(0, 0, 10%);
+  max-width: 10%;
+}
+.flex-col-20 {
+  @include flex(0, 0, 20%);
+  max-width: 20%;
+}
+.flex-col-25 {
+  @include flex(0, 0, 25%);
+  max-width: 25%;
+}
+.flex-col-33, .flex-col-34 {
+  @include flex(0, 0, 33.3333%);
+  max-width: 33.3333%;
+}
+.flex-col-40 {
+  @include flex(0, 0, 40%);
+  max-width: 40%;
+}
+.flex-col-50 {
+  @include flex(0, 0, 50%);
+  max-width: 50%;
+}
+.flex-col-60 {
+  @include flex(0, 0, 60%);
+  max-width: 60%;
+}
+.flex-col-66, .flex-col-67 {
+  @include flex(0, 0, 66.6666%);
+  max-width: 66.6666%;
+}
+.flex-col-75 {
+  @include flex(0, 0, 75%);
+  max-width: 75%;
+}
+.flex-col-80 {
+  @include flex(0, 0, 80%);
+  max-width: 80%;
+}
+.flex-col-90 {
+  @include flex(0, 0, 90%);
+  max-width: 90%;
+}
+
+// flex-self
+.align-self {
+  &-start {
+    align-self:  flex-start;
+  }
+  &-end {
+    align-self:  flex-end;
+  }
+  &-center {
+    align-self:  center;
+  }
+}
+
+/* Responsive Grid Classes */
+/* Adding a class of responsive-X to a row */
+/* will trigger the flex-direction to */
+/* change to column and add some margin */
+/* to any columns in the row for clearity */
+
+@include responsive-grid-break('.responsive-sm', $grid-responsive-sm-break);
+@include responsive-grid-break('.responsive-md', $grid-responsive-md-break);
+@include responsive-grid-break('.responsive-lg', $grid-responsive-lg-break);

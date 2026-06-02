@@ -1,0 +1,350 @@
+.pricing-banner{
+    width: 100%;
+    height: 600px;
+    margin-top: 84px;
+    background-color: #fff;
+
+    .banner-content{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .pricing-text{
+            h1{
+                font-family: $playfair-display;
+                font-weight: normal;
+                font-size: 64px;
+                line-height: 63px;
+                color: #272727;
+            }
+            
+        }
+
+        .pricing-img{
+            width: 600px;
+            height: 600px;
+            // margin-top: 56px;
+            margin-right: 49px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+.pricing-page{
+    margin-top: 130px;
+    margin-bottom: 276px;
+    .main-content-wrapper{
+        padding-left: 139px;
+        padding-right: 139px;
+        .plans{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #CBD5E0;
+            padding-bottom: 10px;
+            margin-bottom: 56px;
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                color: #333333;
+            }
+
+            .plan-options{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .nav-tabs{
+                    width: 253px;
+                    height: 40px;
+                    background: #FFFFFF;
+                    border: 1px solid #FFC300;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+                    margin-right: 40px;
+                    .nav-item{
+                        width: 50%;
+                        height: 40px;
+                        border-radius: 7px;
+                        .nav-link{
+                            width: 100%;
+                            height: 100%;
+                            border: 0;
+                            padding: 0;
+                            margin: 0;
+                            border-radius: 7px;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #1D293F;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &.active{
+                                background: #FFC300;
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                        }
+                    }
+
+                    .nav-item:last-child{
+                        .nav-link{
+                            &.active{
+                                border-radius: 7px;
+                                background: #FFC300;
+                                border-top-left-radius: 0;
+                                border-bottom-left-radius: 0;
+                            }
+                        }
+                    }
+                }
+
+                .select-currency{
+                    label{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000000;
+                        margin-bottom: 0;
+                        margin-right: 16px;
+                    }
+
+                    select{
+                        width: 90px;
+                        height: 36px;
+                        border: 0;
+                        outline: none;
+                        appearance: none;
+                        background-color: #FFFFFF;
+                        background-image: url('../../assets/images/icons/arrow-down-s-fill.svg');
+                        background-repeat: no-repeat;
+                        background-size: 15px 15px;
+                        background-position: right 10px center;
+                        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                        border-radius: 100px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $primary-color;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+
+        .choose-plan{
+            h1{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                margin-bottom: 109px;
+            }
+
+            .tab-content{
+                .tab-pane{
+                    .plan-container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-start;
+                        background: #FFFFFF;
+                        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+                        border-radius: 8px;
+                        height: 521px;
+                        position: relative;
+
+                        &.active{
+                            background: #FFFFFF;
+                            border: 5px solid #8A0E49;
+                            border-radius: 8px;
+
+                            .plan-btn{
+                                background-color: $primary-color;
+                                color: #fff;
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        .plan-img{
+                            width: 100%;
+                            height: 300px;
+                            // margin-bottom: 24px;
+                            margin-top: -100px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .plan-title{
+                            font-weight: 600;
+                            font-size: 28px;
+                            color: #000000;
+                            // margin-bottom: 8px;
+                        }
+
+                        .plan-price{
+                            font-weight: 600;
+                            font-size: 28px;
+                            color: #000000;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                            padding-bottom: 16px;
+                            border-bottom: 1px solid #F0F0F0;
+                            width: 80%;
+                            margin-bottom: 14px;
+                            h5{
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 35px;
+                                color: #000000;
+                                margin: 0 4px 0 4px;
+                            }
+                            span{
+                                font-weight: 400;
+                                color: #8C8C8C;
+                                font-size: 16px;
+                                line-height: 35px;
+                            }
+                        }
+
+                        .plan-desc{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: 90%;
+                            // margin-bottom: 82px;
+                            li{
+                                list-style-type: none;
+                                display: flex;
+                                align-items: center;
+                                img{
+                                    width: 10px;
+                                    height: 11px;
+                                    margin-right: 10px;
+                                }
+                                h5{
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 25px;
+                                    color: #000000;
+                                    margin-bottom: 0;
+                                    margin-right: 10px;
+                                    span{
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        line-height: 20.11px;
+                                        color: #8C8C8C;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .plan-btn{
+                            width: 80%;
+                            height: 50px;
+                            background-color: #fff;
+                            border: 1px solid #8A0E49;
+                            box-sizing: border-box;
+                            border-radius: 30px;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #8A0E49;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 18px;
+                            position: absolute;
+                            bottom: 0;
+                            &:hover{
+                                color: #fff;
+                                background-color: #8A0E49;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $screen_768px){
+    .pricing-banner{
+        .banner-content{
+            flex-direction: column;
+            .pricing-text{
+                margin-top: 32px;
+                padding-right: 32px;
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .pricing-img{
+                width: auto;
+                height: 400px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .pricing-page{
+        margin-top: 16px;
+        margin-bottom: 50px;
+        .main-content-wrapper{
+            padding: 32px;
+            .plans{
+                flex-direction: column;
+                align-items: flex-start;
+                .plan-options{
+                    flex-direction: column;
+                    width: 100%;
+                    .nav{
+                        margin-bottom: 16px;
+                        margin-right: 0;
+                        width: 100%;
+                    }
+                    .select-currency{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            .choose-plan{
+                h1{
+                    font-size: 18px;
+                    margin-bottom: 60px;
+                }
+
+                .tab-content{
+                    .tab-pane{
+                        .plan-container{
+                            margin-bottom: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

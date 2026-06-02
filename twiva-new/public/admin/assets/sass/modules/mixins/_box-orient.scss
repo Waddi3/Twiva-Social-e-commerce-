@@ -1,0 +1,7 @@
+@mixin box-orient($value:vertical) {
+  -webkit-box-orient: $value;
+  -moz-box-orient: $value;
+  -ms-box-orient: $value;
+  -o-box-orient: $value;
+  box-orient: $value;
+}

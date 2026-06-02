@@ -1,0 +1,284 @@
+// $MIXINS
+// Text
+@mixin rem($val) {
+	font-size: ($val * 10) + px;
+	font-size: $val + rem;
+}
+
+@mixin line-height($val) {
+	line-height: ($val * 10) + px;
+	line-height: $val + rem;
+}
+
+// BEM syntax
+@mixin element($name) {
+	@at-root &-#{$name} {
+		@content;
+	}
+}
+
+@mixin modifier($name) {
+	@at-root &--#{$name} {
+		@content;
+	}
+}
+
+
+// Animation delay
+@mixin delay ($delay) {
+  @include animation-delay($delay);
+}
+
+// Media query
+@mixin breakpoint($point) {
+  @if $point == extralarge {
+    @media  only screen and (min-width: 1201px) { @content; }
+  }
+  @else if $point == large {
+    @media  only screen and (max-width: 1200px) { @content; }
+  }
+  @else if $point == medium {
+    @media only screen and (max-width: 992px) { @content; }
+  }
+  @else if $point == small {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+  @else if $point == extrasmall {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $point == iphone_six {
+    @media only screen and (min-device-width : 375px) { @content; }
+  }
+  @else if $point == iphone {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { @content; }
+  }
+  @else if $point == retina {
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) { @content; }
+  }
+}
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+
+
+// Border
+@mixin add-border($size, $color, $style, $position){
+	@if $position == 'all'{
+		border:$size $style $color;
+	} @else if $position == 'top'{
+		border-top:$size $style $color;
+	} @else if $position == 'right'{
+		border-right:$size $style $color;
+	} @else if $position == 'bottom'{
+		border-bottom:$size $style $color;
+	} @else if $position == 'left'{
+		border-left:$size $style $color;
+	} @else if $position == 'top-bottom'{
+		border-top:$size $style $color;
+		border-bottom:$size $style $color;
+	} @else if $position == 'right-left'{
+		border-right:$size $style $color;
+		border-left:$size $style $color;
+	}
+}
+
+
+
+
+
+// Box Sizing
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+// Background images
+@mixin background-cover($filename, $position:center top, $size:cover, $repeat: no-repeat) {
+    background: {
+        image: url(#{$imagedir}#{$filename});
+        position: $position;
+        repeat: $repeat;
+				size:$size;
+    }
+}
+
+@mixin background-repeat($filename, $position:0 0, $repeat:repeat){
+    background: {
+        image: url(#{$imagedir}#{$filename});
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+
+
+
+// http://philipwalton.github.io/solved-by-flexbox/
+// https://github.com/philipwalton/solved-by-flexbox
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin display-inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex-direction($value: row) {
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+  } @else if $value == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  } @else if $value == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+  // No Webkit Box fallback.
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  @if $value == nowrap {
+      -ms-flex-wrap: none;
+  } @else {
+      -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+  -webkit-box-flex: $fg;
+  -webkit-flex: $fg $fs $fb;
+  -moz-box-flex: $fg;
+  -moz-flex: $fg $fs $fb;
+  -ms-flex: $fg $fs $fb;
+  flex: $fg $fs $fb;
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+  // No Webkit Box fallback.
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
+
+@mixin align-items($value: stretch) {
+  @if $value == flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+  } @else if $value == flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+  } @else {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+  }
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  align-items: $value;
+}
+
+@mixin align-self($value: auto) {
+  -webkit-align-self: $value;
+  -moz-align-self: $value;
+  @if $value == flex-start {
+    -ms-flex-item-align: start;
+  } @else if $value == flex-end {
+    -ms-flex-item-align: end;
+  } @else {
+    -ms-flex-item-align: $value;
+  }
+  align-self: $value;
+}
+
+@mixin align-content($value: stretch) {
+  -webkit-align-content: $value;
+  -moz-align-content: $value;
+  @if $value == flex-start {
+    -ms-flex-line-pack: start;
+  } @else if $value == flex-end {
+    -ms-flex-line-pack: end;
+  } @else {
+    -ms-flex-line-pack: $value;
+  }
+  align-content: $value;
+}
+
+@mixin justify-content($value: stretch) {
+  @if $value == flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+  } @else if $value == flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  } @else if $value == space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  } @else {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+  }
+  -webkit-justify-content: $value;
+  -moz-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin flex-order($n) {
+  -webkit-order: $n;
+  -ms-flex-order: $n;
+  order: $n;
+  -webkit-box-ordinal-group: $n;
+}
+
+@mixin responsive-grid-break($selector, $max-width) {
+  @media (max-width: $max-width) {
+    #{$selector} {
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .col, .col-10, .col-20, .col-25, .col-33, .col-34, .col-50, .col-66, .col-67, .col-75, .col-80, .col-90 {
+        @include flex(1);
+        margin-bottom: ($grid-padding-width * 3) / 2;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

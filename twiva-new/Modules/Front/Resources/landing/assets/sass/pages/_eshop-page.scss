@@ -1,0 +1,272 @@
+.eshop-banner{
+    .banner-content{
+        .banner-text{
+            margin-top: 175.5px;
+        }
+    }
+}
+
+.eshop-page{
+    .main-content-wrapper{
+        .main-heading{
+            padding: 0;
+            margin: 108px 0 48px 0;
+            h1{
+                margin: 0 0 16px 0;
+                font-weight: normal;
+                font-size: 64px;
+                line-height: 100px;
+                text-align: center;
+                color: #272727;
+            }
+            p{
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 150%;
+                text-align: center;
+                color: #272727;
+                margin: 0;
+            }
+        }
+
+        .increase-sales{
+            .left-image{
+                bottom: -195px;
+                top: unset;
+            }
+
+            .right-image{
+                right: -78px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    .eshop-services{
+        .services-container{
+            .service-lists{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                .list-item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    list-style-type: none;
+                    margin-bottom: 48px;
+                    width: 100%;
+                    .list-content{
+                        background-color: rgba(138,14,73,0.1);
+                        border-radius: 8px;
+                        padding: 24px;
+                        width: 90%;
+                        position: relative;
+                        
+                        &.active{
+                            background-color: $primary-color;
+                            h4{
+                                color: #FAFBFB;
+                            }
+                            p{
+                                color: #EDEFF5;
+                            }
+                            .right-arrow{
+                                border-left: 15px solid $primary-color;
+                            }
+                        }
+                        h4{
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 150%;
+                            color: #272727;
+                            margin-bottom: 4px;
+                        }
+                        p{
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #272727;
+                            opacity: 0.7;
+                            margin-bottom: 0;
+                        }
+                        .right-arrow{
+                            width: 0;
+                            height: 0;
+                            border-top: 15px solid transparent;
+                            border-bottom: 15px solid transparent;
+                            border-left: 15px solid rgba(138, 14, 73, 0.1);
+                            position: absolute;
+                            right: -15px;
+                            top: 35%;
+                        }
+                    }
+
+                    .list-circle{
+                        width: 34px;
+                        height: 34px;
+                        text-align: center;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 135px;
+                            background-color: rgba(138,14,73, 0.3);
+                            position: absolute;
+                            top: 16px;
+                            left: 16px;
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .list-item:last-child{
+                    .list-circle{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mobile-image{
+            width: 100%;
+            height: 905px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $screen_768px){
+    .eshop-banner{
+        .banner-content{
+            .banner-text{
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .eshop-page{
+        .main-content-wrapper{
+            .main-heading{
+                margin-top: 60px;
+                margin-bottom: 0;
+                padding: 16px;
+                h1{
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+
+            .eshop-services{
+                .services-container{
+                    .service-lists{
+                        .list-item{
+                            justify-content: center;
+                            margin-bottom: 16px;
+                            .list-content{
+                                padding: 16px;
+                                h4{
+                                    font-size: 16px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                }
+                                .right-arrow{
+                                    right: -14px;
+                                    top: 33%;
+                                }
+                            }
+                            .list-circle{
+                                width: 24px;
+                                height: 24px;
+                                margin-left: 18px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                &::after{
+                                    left: 11px;
+                                    height: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .start-earning-section{
+                .left-image{
+                    bottom: -205px;
+                }
+                .right-image{
+                    right: -145px;
+                    bottom: 125px;                
+                }
+
+                .earning-section-content{
+                    justify-content: center;
+                    h1{
+                        text-align: center;
+                        font-size: 40px;
+                        margin-top: 0;
+                    }
+                    .earning-tips{
+                        padding: 16px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        p{
+                            font-size: 16px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $screen_568px){
+    .eshop-page{
+        .main-content-wrapper{
+            .eshop-services{
+                .services-container{
+                    .service-lists{
+                        .list-item{
+                            justify-content: center;
+                            .list-content{
+                                .right-arrow{
+                                    display: none;
+                                }
+                            }
+                            .list-circle{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .mobile-image{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

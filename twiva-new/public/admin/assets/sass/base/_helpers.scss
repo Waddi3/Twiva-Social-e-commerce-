@@ -1,0 +1,89 @@
+ul.list-block {
+  list-style: none;
+  @include padding(null null null 0px);
+  li {
+    display: block;
+  }
+}
+
+
+
+$i: 0;
+@while ($i <=15) {
+  .padding {
+    &-#{$i} {
+      padding: $i+px !important;
+    }
+    &-right {
+      &-#{$i} {
+      padding-right: $i+px !important;
+     }
+    }
+    &-left {
+     &-#{$i} {
+     padding-left: $i+px !important;
+     }
+    }
+    &-top {
+      &-#{$i} {
+      padding-top: $i+px !important;
+      }
+     }
+    &-bottom {
+     &-#{$i} {
+     padding-bottom: $i+px !important;
+     }
+    }
+  }
+  .margin {
+    &-#{$i} {
+      margin: $i+px !important;
+    }
+    &-right {
+     &-#{$i} {
+      margin-right: $i+px !important;
+     }
+    }
+    &-left {
+     &-#{$i} {
+      margin-left: $i+px !important;
+     }
+    }
+    &-top {
+     &-#{$i} {
+      margin-top: $i+px !important;
+     }
+    }
+    &-bottom {
+     &-#{$i} {
+      margin-bottom: $i+px !important;
+     }
+    }
+  }
+  .border {
+    &-#{$i} {
+      border: $i+px !important;
+    }
+    &-top-#{$i} {
+      border-top: $i + px !important;
+    }
+    &-bottom-#{$i} {
+      border-bottom: $i + px !important;
+    }
+    &-left-#{$i} {
+      border-left: $i + px !important;
+    }
+    &-right-#{$i} {
+      border-right: $i + px !important;
+    }
+  }
+
+  $i: $i + 5;
+}
+
+
+.box-shadow-none {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none!important;
+}

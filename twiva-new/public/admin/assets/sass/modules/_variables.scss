@@ -1,0 +1,118 @@
+// font size
+$-size-medium: floor(($font-size-base * 1.1428)) !default; // ~16px
+// Font weights
+//Social icon colors
+$google:#C12323;
+$facebook:#475993;
+//End : social colors
+
+/*Linking Colors*/
+
+$link:#539CF1;
+
+/*End : Linking Colors*/
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$ultrabold: 800;
+// base  url
+$font-url: '../fonts';
+$img-url: '../img';
+$primary-color: #000000;
+$secondary-color:#FFCF34;
+$primary-regular: "GothamMedium",
+sans-serif;
+$primary-font:'Roboto';
+$secondary-font:'Noto Serif';
+$primary-fc:#535353;
+$secondary-fc:#7A7A7A;
+@mixin primary-regular() {
+    font-family: $primary-regular;
+}
+
+@mixin primary-bold() {
+    font-family: $primary-regular;
+    font-weight: $bold;
+}
+
+@mixin primary-italic() {
+    font-family: $primary-regular;
+    font-weight: $italic;
+}
+
+@mixin primary-semibold() {
+    font-family: $primary-regular;
+    font-weight: $semibold;
+}
+
+@mixin primary-light() {
+    font-family: $primary-regular;
+    font-weight: $thin;
+}
+
+@mixin primary-italic-bold() {
+    font-family: $primary-regular;
+    font-weight: $thin;
+    font-style: italic;
+}
+
+// font color
+$color-text: $text-color;
+$brand-secondary: $brand-success;
+$color-text-secondary: $brand-secondary;
+@mixin color-text($alpha) {
+    color: rgba($color-text, $alpha);
+}
+
+@mixin color-text-secondary($alpha) {
+    color: rgba($color-text-secondary, $alpha);
+}
+
+// border-color
+$color-border: rgba($brand-primary, 0.6);
+// background-color
+@mixin background-primary($alpha) {
+    background: rgba($brand-primary, $alpha);
+}
+
+@mixin background-secondary($alpha) {
+    background: rgba($brand-secondary, $alpha);
+}
+
+// social media colors
+$color-facebook: #3B5998;
+$color-linkedin: #0175b2;
+$color-youtube: #e62d28;
+$color-instagram: #517da3;
+$color-twitter: #00ACEE;
+$color-google-plus: #dd4b3e;
+$color-pinterest: #bd081b;
+// media variable small devices
+$screen-mobile-sm: 413px;
+$screen-mobile-xs: 374px;
+
+//Circle process 
+$borderWidth: 7px;
+$animationTime: 1.5s;
+$border-color-default: #C4C4C4;
+$border-color-fill: #27AE60;
+$size: 113px;
+
+//Create how many steps
+$howManySteps: 10; //this needs to be even. 
+//for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
+
+$screen_768px:768px;
+$screen_600px:600px;
+$screen-mobile-sm: 413px;
+$screen-mobile-xs: 374px;
+$screen_375px:375px;
+
+// gridflex variables
+$grid-padding-width: 10px !default;
+$grid-responsive-sm-break: 767px !default; // smaller than landscape phone
+$grid-responsive-md-break: 992px !default; // smaller than portrait tablet
+$grid-responsive-lg-break: 1023px !default; // smaller than landscape tablet

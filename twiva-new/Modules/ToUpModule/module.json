@@ -1,0 +1,13 @@
+{
+    "name": "ToUpModule",
+    "alias": "toupmodule",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ToUpModule\\Providers\\ToUpModuleServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

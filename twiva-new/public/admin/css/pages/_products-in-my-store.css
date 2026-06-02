@@ -1,0 +1,241 @@
+/***Products in My Store 4 **/
+.order_box .box3 {
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd; }
+
+.order_box .box3 h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600; }
+
+.order_box .box3 h2 i {
+  margin-right: 8px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-size: 15px; }
+
+.order_box .box1 {
+  padding: 20px 30px; }
+
+.order_box .box1 .frst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.order_box .box1 ul {
+  margin: 0; }
+
+.order_box .box1 ul li {
+  list-style: none;
+  display: inline-block; }
+
+.order_box .box1 ul li a {
+  border: 1.3px solid #000;
+  color: #000;
+  border-radius: 4px;
+  padding: 8px 10px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px; }
+
+.order_box .box1 ul li:last-child a {
+  margin-right: 0; }
+
+.order_box .box1 .second ul li select {
+  background-color: #4fb8e5;
+  border: 1px solid #4fb8e5;
+  border-radius: 4px;
+  padding: 8px 49px 8px 18px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 4% auto;
+  background-position: right 14px center;
+  margin-right: 5px; }
+
+.order_box .box1 .second ul li:nth-child(2) select {
+  background-size: 7% auto; }
+
+.order_box .box1 .second ul li:nth-child(3) select {
+  background-size: 6% auto; }
+
+.order_box .box1 .second ul li a {
+  background: #48a6cc;
+  border-color: #48a6cc;
+  color: #fff;
+  padding: 8px 53px; }
+
+.order_box .box1 ul.push li a {
+  background: #fff;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 2px;
+  border-color: #ddd;
+  font-weight: 500;
+  margin-right: 0; }
+
+.order_box .box1 ul.push {
+  margin: 13px 0 0; }
+
+.lbl_bx label.checkcontainer {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+  position: relative;
+  padding-left: 25px; }
+
+.lbl_bx label.checkcontainer input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.lbl_bx label.checkcontainer span.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  top: 0px;
+  border: 1px solid #ddd; }
+
+.lbl_bx label.checkcontainer span.checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid #111010;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  opacity: 0; }
+
+.lbl_bx label.checkcontainer input:checked ~ .checkmark:after {
+  opacity: 1; }
+
+.order_box .box1 ul li a:hover {
+  text-decoration: none; }
+
+.order_box .box1 .second ul li select:focus {
+  outline: none; }
+
+.order_box .box1 .thrd {
+  margin-top: 30px;
+  max-width: 560px; }
+
+.order_box .box1 .thrd .outer {
+  background: #fff;
+  border-radius: 5px;
+  padding: 18px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.order_box .box1 .thrd .outer .img {
+  height: 90px;
+  width: 100px;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.order_box .box1 .thrd .outer .img img {
+  border-radius: 5px;
+  min-height: 100%; }
+
+.order_box .box1 .thrd .outer .cont {
+  margin-left: 16px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.order_box .box1 .thrd .outer .cont h2 {
+  margin: 7px 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize; }
+
+.order_box .box1 .thrd .outer .cont p {
+  color: #b4b1b1;
+  font-size: 13px;
+  margin: 0; }
+
+.order_box .box1 .thrd .outer .cont h3 {
+  color: #4fb8e5;
+  font-size: 13px;
+  margin: 4px 0 0; }
+
+.order_box .box1 .thrd .outer .cont .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 7px; }
+
+.order_box .box1 .thrd .outer .cont .text h4 {
+  color: #aeaaaa;
+  text-transform: capitalize;
+  font-size: 13.5px;
+  margin: 0; }
+
+.order_box .box1 .thrd .outer .cont .text h4 span {
+  margin-right: 19px; }
+
+.order_box .box1 .thrd .outer .cont .text h4 strong {
+  color: #575454; }
+
+.order_box .box1 .thrd .outer .cont .text a {
+  color: #4fb8e5;
+  text-transform: capitalize;
+  font-size: 13px; }
+
+.order_box .box1 .thrd .outer .cont .text a i {
+  margin-left: 6px; }
+
+.order_box .box1 .thrd .outer:hover {
+  border: 1px solid #4fb8e5; }
+
+.order_box .box1 .thrd .outer .img label {
+  display: none; }
+
+.order_box .box1 .thrd .outer:hover .img label {
+  display: block;
+  position: absolute; }
+
+.order_box .box1 .thrd .outer:hover .img label span.checkmark {
+  left: 3px;
+  top: 3px; }
+
+.order_box .box1 .thrd .outer:hover .img label span.checkmark::after {
+  border-color: #fff;
+  width: 5px;
+  height: 9px;
+  top: 2px; }
+
+.order_box .box1 .thrd .outer .img input:checked ~ span.checkmark {
+  background-color: #4fb8e5; }

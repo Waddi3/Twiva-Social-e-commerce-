@@ -1,0 +1,23 @@
+{
+    "Admin": true,
+    "Business": true,
+    "Buyer": true,
+    "Campaign": true,
+    "Categories": true,
+    "Coupon": true,
+    "Front": true,
+    "Home": true,
+    "Influencer": true,
+    "Notification": true,
+    "Order": true,
+    "Partner": true,
+    "Payment": true,
+    "Platform": true,
+    "Products": true,
+    "Shop": true,
+    "System": true,
+    "ToUpModule": true,
+    "User": true,
+    "Chat": true,
+    "AliExpress": true
+}

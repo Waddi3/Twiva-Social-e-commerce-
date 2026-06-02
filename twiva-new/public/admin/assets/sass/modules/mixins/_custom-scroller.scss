@@ -1,0 +1,44 @@
+@mixin custom-scroller ($axis, $brodness: 4px, $bgcolor: #3cb9aa) {
+		@if ($axis == 'y') {
+	    overflow-y:scroll;
+	    overflow-x: hidden;
+		  &::-webkit-scrollbar {
+		    width: $brodness;
+		  }
+		  &::-webkit-scrollbar-track {
+		      width: $brodness;
+		  }
+		  &::-webkit-scrollbar-thumb {
+		    border-radius: 20px 20px;
+		    background-color: $bgcolor;
+		    outline: 1px solid slategrey;
+				opacity: 0.5;
+		    width: $brodness;
+				&:hover {
+					opacity: 1;
+				}
+		  }
+		}
+	  // overflow x-axis
+		@if ($axis == 'x') {
+	    overflow-x:scroll;
+	    overflow-y: hidden;
+		  &::-webkit-scrollbar {
+		      height: $brodness;
+		  }
+		  &::-webkit-scrollbar-track {
+		      height: $brodness;
+
+		  }
+		  &::-webkit-scrollbar-thumb {
+		    border-radius: 20px 20px;
+		    background-color: $bgcolor;
+		    outline: 1px solid slategrey;
+		    height: $brodness;
+				opacity: 0.5;
+				&:hover {
+					opacity: 1;
+				}
+		  }
+		}
+}

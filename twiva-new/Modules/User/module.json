@@ -1,0 +1,15 @@
+{
+    "name": "User",
+    "alias": "user",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\User\\Providers\\UserServiceProvider",
+        "Modules\\User\\Providers\\EventServiceProvider"
+
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

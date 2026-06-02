@@ -1,0 +1,5 @@
+@mixin background-img($filename){
+	background: {
+		image: url(#{$imagedir}#{$filename});
+	}
+}

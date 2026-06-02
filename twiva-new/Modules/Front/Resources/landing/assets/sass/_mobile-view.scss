@@ -1,0 +1,292 @@
+// screen 768px
+@media screen and (max-width: 768px) 
+{
+    .navbar-expand-md .navbar-toggler{
+        display: block;
+    }
+
+    .header-wrapper{
+        .navbar {
+            width: 100;
+            justify-content: center;
+            .navbar-toggler{
+                margin-left: 0px;
+                margin-right: auto;
+            }
+            .navbar-brand{
+                margin-right: auto;
+                width: auto;
+            }
+            #collapsibleNavbar .navbar-nav{
+                display: block;
+                .nav-item{
+                    padding-left: 40px;
+                    margin-bottom: 10px;
+                }
+            } 
+        }
+    } 
+    .primary-banner .banner-content .banner-img{
+        display: block;
+        img{
+            width: 350px !important;
+            height: 360px !important;
+        }
+    }
+    .influencer-page .main-content-wrapper .featured-influencers{
+        margin-bottom: 40px;
+    }
+    .start-earning-section .earning-section-content .earning-tips p{
+        margin-right: 0px;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-image{
+        width: 260px;
+        height: 260px;
+        margin-bottom: 10px;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-image .card-img-top{
+        width: 100%;
+        // height: auto;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-body .card-title{
+        font-size: 18px;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-body .card-text{
+        display: block;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-body .card-text div{
+        margin-bottom: 8px;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-body .card-text div {
+        h2{
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .controls-top{
+        top: 42%;
+    }
+    .creatives-page .main-content-wrapper .profile-section .row .col-md-4{
+        padding-left: 15px;
+        padding-right: 15px;
+        .card{
+            .cover-img{
+                height: 200px;
+            }
+            .profile-img{
+                width: 100px;
+                height: 100px;
+                margin-top: -55px;
+                margin-bottom: 0px;
+            }
+            .card-body{
+              padding: 0px 10px;
+                    .name{
+                        font-size: 18px;
+                    
+                    }
+                    p{
+                        margin-bottom: 0px;
+                    }
+                    .social-icons{
+                        margin-bottom: 25px;
+                        margin-top: 16px;
+                    }
+                    .profile-links{
+                        a{
+                            font-size: 14px;
+                            margin-right: 8px;
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+            }         
+        }
+        
+    }
+    .primary-banner.eshop-banner .banner-content .banner-img img {
+        width: 400px;
+    }
+    .eshop-page .main-content-wrapper .main-heading h1 {
+        font-size: 35px;
+        line-height: 50px;
+     
+    }
+    .eshop-page .main-content-wrapper .main-heading p {
+       
+        max-width: 500px;
+    }
+    .eshop-page .eshop-services .mobile-image{
+        height: auto;
+        img{
+            margin-top: 70px;
+        }
+
+        #mobile-img-2{
+            margin-top: 0px;
+        }
+    }
+    .pricing-banner .banner-content .pricing-text{
+        padding-right: 0px;
+        h1{
+            text-align: center;
+        }
+    }
+    .pricing-page .main-content-wrapper .choose-plan .tab-content .tab-pane {
+        margin-bottom: -150px;
+        .plan-container{
+            margin-bottom: 150px;
+    
+        }
+       
+    }
+    .creators-profile-page .creators-profile-wrapper{
+        margin-top: 20px;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 30px;
+       
+    } 
+    #hire-me-page-wrapper{
+        width: 96%;
+    }
+    
+}
+// screen 768px
+@media screen and (max-width: 610px) 
+{   
+    .primary-banner .banner-content .banner-img{
+        display: none;
+    }
+    .primary-banner .banner-content .banner-img img{
+        width: 245px;
+    }
+    .main-content-wrapper .main-tab-content .tab-section-container .tab-items .text-wrapper{
+        h2{
+            align-items: start;
+            img{
+                margin-top: 8px;
+            }
+        }
+        p{
+            padding-left: 30px;
+        }
+    }
+    .influencer-page .main-content-wrapper .featured-influencers .influencer-heading h1{
+        font-size: 30px;
+    }
+    .influencer-page .main-content-wrapper .featured-influencers #multi-item-slider .carousel-inner .carousel-item .card .card-image{
+        height: 260px;
+    }
+    .primary-banner.eshop-banner .banner-content .banner-img img{
+        width: 230px;
+    }
+    .eshop-page .main-content-wrapper .main-heading h1{
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .eshop-page .main-content-wrapper .main-heading p {
+      
+        line-height: 28px;
+    }
+    .eshop-page .eshop-services .services-container .service-lists{
+        margin-top: 40px;
+    }
+    .about-us-banner {
+        height: 200px;
+    }
+    
+    .about-us-banner .banner-content .faq-img {
+        padding-top: 16px;
+        width: 375px;
+        height: 100%;
+        display: block !important;
+        img{
+            object-fit: initial;
+        }
+    }
+    .faq-banner .banner-content .faq-text h1{
+        font-size: 32px;
+    }
+    .about-page{
+        padding: 16px;
+        margin-bottom: 0px;
+    }
+    
+    .pricing-banner{
+        height: 461px;
+        .banner-content {
+            .pricing-img{
+                height: 331px;
+            }
+            .pricing-text{
+                 h1{
+                   font-size: 30px;
+                   line-height: 40px;
+                }
+            }
+        }
+    } 
+    .pricing-page .main-content-wrapper{
+        padding-top: 0px;
+    }
+    .faq-banner
+    {
+        height: 160px;
+        .banner-content{
+     
+            .faq-text{
+                padding-top: 62px;
+                width: 100%;
+                text-align: center;
+                h1{
+                    line-height: 40px;
+                }
+            }
+    } 
+        
+    } 
+    .portfolio{
+        display: block !important;
+        .title{
+            margin-bottom: 16px !important;
+        }
+    }
+    #hire-me-page-wrapper{
+        width: 92%;
+        .post-heading{
+            padding: 16px;
+        }
+    }
+    #service-page .form-group{
+        margin-bottom: 20px;
+    }
+    .post-container .post-input-container .row .col-sm-6, .post-container .post-input-container .row .col-lg-6{
+        flex: 0 0 100%;
+    }
+
+
+    .contact-page{
+        padding-top: 130px;
+    }
+
+    .whatsapp-link{
+        display: none;
+    }
+
+    .copyright-section{
+        .social-icons{
+            width: 200px !important;
+            .icon-list-item:last-child{
+                position: fixed;
+                bottom: 40px;
+                right: 18px;
+            }
+        }
+    }
+}

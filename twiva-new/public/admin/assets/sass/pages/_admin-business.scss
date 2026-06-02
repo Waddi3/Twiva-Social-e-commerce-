@@ -1,0 +1,492 @@
+
+//******   Scroll Bar Styling Start ******//
+
+/* width */
+::-webkit-scrollbar {
+    height:6px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1); 
+    border-radius: 32px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E4E4E4;
+}
+
+//******   Scroll Bar Styling End ******//
+
+#business-dashboard{
+    .right_col{
+        overflow-x: scroll;
+        .catalog-page{
+            padding:16px;
+            .select-top{
+                .search-wrap{
+                    display: flex;
+                    width:60%;
+                    .search-panel{
+                        margin-top: 0px;
+                        margin-right: 8px;
+                        min-width: 405px !important;
+                        height: 43px;
+                        background-color: #fff !important; 
+                        input::placeholder{
+                            font-family: Source Sans Pro;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: #3F3F46;
+                        }
+                    }
+                }
+                .button-catalog{
+                    .white-bttn{
+                        background: #FFFFFF;
+                        border: 1px solid #7A0D41;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #7A0D41;
+                    }
+                    .purple-btn{
+                        background: #7A0D41;
+                        border-radius: 4px;
+                        font-family: Source Sans Pro;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            .table-responsive{
+                #admin-table, #dtOrderExample{
+                    margin-bottom: 0 !important;
+                    thead{
+                        background: #EDEFF5;
+                        height: 40px;
+                        tr{
+                            
+                            th{
+                                padding:16px;
+                                font-family: inter;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 15px;
+                                text-transform: uppercase;
+                                color: rgba(19,50,86,0.7);
+                                border-top: 1px solid rgba(29,59,168,0.1);
+                                border-bottom: 1px solid rgba(19,50,86,0.5);
+                                border-right: 1px solid rgba(19,50,86,0.1);
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                vertical-align: middle;
+                                padding:16px;
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #4B5563;
+                                border-bottom: 1px solid rgba(0,0,0,0.1);
+                                white-space: nowrap;
+                                &.eshop-active{
+                                    color: #27AE60;
+                                    p{  
+                                        width:fit-content;
+                                        background: rgba(39, 174, 96, 0.1);
+                                        border-radius: 2px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: #27AE60;
+                                        padding: 4px 8px;
+                                    }
+                                }
+                                &.eshop-failed{
+                                    p{
+                                        width:fit-content;
+                                        background: rgba(255, 76, 97, 0.1);
+                                        border-radius: 2px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: #EB5757;
+                                        padding: 4px 8px;  
+                                    }
+                                }
+                                &.eshop-upcoming{
+                                    p{
+                                        width:fit-content;
+                                        background: rgba(74, 179, 251, 0.1);
+                                        border-radius: 2px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        color: #4AB3FB;
+                                        padding: 4px 8px; 
+                                    }
+                                }
+                                &.in-stock{
+                                    p{  
+                                        width:fit-content;
+                                        background: #E0FFE5;
+                                        border: 0.5px solid #219653;
+                                        border-radius: 1px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                        color: #27AE60;
+                                        padding: 2px 8px;
+                                    }
+                                }
+                                &.in-process{
+                                    p{  
+                                        width: fit-content;
+                                        background: rgba(255, 184, 0, 0.2);
+                                        border-radius: 2px;
+                                        padding: 4px 8px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        color: #F2994A;
+                                    }
+                                }
+                            }
+                            .eshop-link{
+                                a{
+                                    color: #478ae9;
+                                }
+                            }
+                            .product-view{
+                                a{
+                                    color: #478ae9;
+                                }
+                            }
+                            .t-rating{
+                               img{
+                                   vertical-align: text-top;
+                                    width: 14px;
+                                    height: 14px;
+                                    margin-left: 10px;
+                               }
+                            }
+                            .t-action{
+                                img{
+                                    margin-right: 24px;
+                                }
+                            }
+                            .status-disable{
+                                p{
+                                    width:fit-content;
+                                    background: #E0E0E0;
+                                    border-radius: 2px;
+                                    font-family: Source Sans Pro;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 10px;
+                                    line-height: 13px;
+                                    display: flex;
+                                    align-items: center;
+                                    color: #828282;
+                                    padding: 4px 8px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .pagination{
+                padding: 8px;
+                background-color: #ffffff;
+                .dataTables_paginate {
+                    float: unset;
+                    a{
+                        background: transparent !important;
+                    }
+                    ul{
+                        li{
+                            border-radius: 4px;
+                            a{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: #27272A;
+                            }
+                            &.active{
+                                background: #FBBF24 !important;
+                            } 
+                        }
+                        #example_next{
+                            background: #E4E4E7;
+                            padding: 5px 10px !important;
+                            a{
+                                padding: 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Slide Button Start //
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 13px;
+    margin-bottom: 0 !important;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 24px;
+    height: 12px;
+    &:after{
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: -7px;
+        top:-2px;
+        background-color: #1A73E9;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+  }
+  
+  input:checked + .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: -7px;
+    top:-2px;
+    // background-color: #1A73E9;
+    background: linear-gradient(270deg, #1A73E9 0%, #6C92F4 100%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    
+  }
+  
+  input:checked + .slider {
+    // background-color: #a1b8f1;
+    background: linear-gradient(270deg, rgba(26,115,233,0.24) 0%, rgba(108,146,244,0.24) 100%);
+    &:after{
+        display: none;
+     }
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #fff;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+    transition: 0.4s;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+// Slide Button End //
+
+
+
+#business-dashboard{
+    .right_col{
+        .catalog-page{
+            .eshop-product{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                padding: 16px;
+                margin-bottom: 32px;
+                p{
+                    margin-left:32px;
+                    margin-right: 32px;
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;                    
+                    color: #4B5563;
+                }
+            }
+        }
+    }
+}
+
+
+
+//admin-pay-later-request.html
+#business-dashboard{
+    .right_col{
+        .catalog-page{
+            .paylater-heading{
+                display: flex;
+                background-color: #fff;
+                margin-bottom: 32px;
+                a{
+                    padding: 16px 32px;
+                    font-family: Source Sans Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #8A0E49;
+                    &.pay-active{
+                        border-bottom: 3px solid #FFC300;
+                    }
+                    &.pay-non-active{
+                        color: #828282;
+                    }
+                }
+            }
+            #dtOrderExample, #admin-table{
+                tbody{
+                    tr{
+                        td{
+                            &.payment-status{
+                                display: flex;
+                                
+                                a{
+                                    &.pay-approve{
+                                        width:fit-content;
+                                        background: rgba(39, 174, 96, 0.1);
+                                        border-radius: 2px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: #27AE60;
+                                        padding: 4px 8px;
+                                        margin-right: 16px;
+                                    }
+                                    &.pay-cancel{
+                                        width:fit-content;
+                                        background: rgba(255, 76, 97, 0.1);
+                                        border-radius: 2px;
+                                        font-family: Source Sans Pro;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 10px;
+                                        line-height: 13px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: #EB5757;
+                                        padding: 4px 8px; 
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .doc-link{
+                            a{
+                                font-family: Source Sans Pro;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 18px;
+                                text-decoration-line: underline;
+                                text-transform: uppercase;
+                                color: #2F80ED;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#country_code{
+    width: 22%;
+    float: left;
+    height: 40px;
+    padding-right: 0px !important;
+}
+#country_code + input{
+    width: 78%;
+    float: left;
+}
+
+
+#export{
+    cursor: pointer;
+    height: 43px;
+}
+
